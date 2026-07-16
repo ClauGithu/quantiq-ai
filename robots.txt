@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ClauGithu.github.io/quantiq-ai/sitemap.xml
+Sitemap: https://quantiqai.io/sitemap.xml
