@@ -1,3 +1,5 @@
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','2097755697844140');fbq('track','PageView');
+
 var I18N = {
   es: {
     "nav.cta": "Quiero mi Agente →",
@@ -230,9 +232,9 @@ window.setLang = function (lang) {
 };
 
 (function () {
-  var saved = 'es';
-  try { saved = localStorage.getItem('quantiq_lang') || 'es'; } catch (e) {}
-  if (saved !== 'es') applyLang(saved);
+  var saved = 'en';
+  try { saved = localStorage.getItem('quantiq_lang') || 'en'; } catch (e) {}
+  applyLang(saved);
 })();
 
 (function () {
