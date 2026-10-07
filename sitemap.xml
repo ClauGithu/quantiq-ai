@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://quantiqai.io/redes/</loc>
+    <lastmod>2026-10-07T01:49:54.121Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://quantiqai.io/lista-espera/</loc>
-    <lastmod>2026-10-07T01:33:36.310Z</lastmod>
+    <lastmod>2026-10-07T01:33:49.780Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
