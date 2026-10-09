@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://quantiqai.io/legal">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+
+<!-- SEO Meta Tags -->
+<title>Legal | Quantiq AI</title>
+<meta name="description" content="Privacy Policy, Terms of Service, Data Processing Agreement, Data Deletion Instructions and Google Limited Use Disclosure for Quantiq AI, a brand of JCB Worldwide Enterprises LLC." />
+<meta property="og:title" content="Legal | Quantiq AI" />
+<meta property="og:description" content="Privacy Policy, Terms of Service, Data Processing Agreement, Data Deletion Instructions and Google Limited Use Disclosure for Quantiq AI, a brand of JCB Worldwide Enterprises LLC." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Legal | Quantiq AI" />
+<meta name="twitter:description" content="Privacy Policy, Terms of Service, Data Processing Agreement, Data Deletion Instructions and Google Limited Use Disclosure for Quantiq AI, a brand of JCB Worldwide Enterprises LLC." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mv0d9sg9-z6oi0";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://app.quantiqai.io/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=7903');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='GGBke4';
+  var apiBase='https://app.quantiqai.io';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='GGBke4';
+  var apiBase='https://app.quantiqai.io';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="bar">
+<a class="logo" href="/">Quantiq <span>AI</span></a>
+<nav class="legal" aria-label="Legal documents"><a href="#privacy" data-tab="privacy">Privacy Policy</a><a href="#terms" data-tab="terms">Terms of Service</a><a href="#dpa" data-tab="dpa">DPA</a><a href="#data-deletion" data-tab="data-deletion">Data Deletion</a><a href="#limited-use" data-tab="limited-use">Google Limited Use</a></nav>
+</div></header>
+<section class="doc" id="privacy" data-doc="privacy">
+<div class="wrap"><aside class="toc" aria-label="Privacy Policy contents"><p>On this page</p><a href="#privacy-who">1. Who we are and our role</a><a href="#privacy-collect">2. Information we collect</a><a href="#privacy-use">3. How we use information</a><a href="#privacy-ai">4. AI assistants and automated responses</a><a href="#privacy-sms">5. SMS and WhatsApp messaging</a><a href="#privacy-share">6. How we share information</a><a href="#privacy-subprocessors">7. Service providers (sub-processors)</a><a href="#privacy-retention">8. Data retention</a><a href="#privacy-rights">9. Your rights and choices</a><a href="#privacy-transfers">10. International transfers</a><a href="#privacy-security">11. Security</a><a href="#privacy-google">12. Google user data</a><a href="#privacy-children">13. Children</a><a href="#privacy-changes">14. Changes to this policy</a><a href="#privacy-contact">15. Contact us</a></aside>
+<main><h1>Privacy Policy</h1><p class="meta">Effective date: October 8, 2026 &middot; Last updated: October 8, 2026</p>
+<p class="lead">This Privacy Policy explains how Quantiq AI collects, uses, shares and protects personal data when you visit our websites, use our platform, or communicate with our AI assistants on Instagram, Facebook Messenger, WhatsApp, SMS, web chat and other channels.</p>
+<div class="callout"><strong>Quantiq AI</strong> is a brand of <strong>JCB Worldwide Enterprises LLC</strong>, 29717 Morwen Pl, Zephyrhills, FL 33543-6738, United States. Contact: <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>.</div>
+<h2 id="privacy-who">1. Who we are and our role</h2>
+<p>JCB Worldwide Enterprises LLC, doing business as Quantiq AI ("Quantiq AI", "we", "us", "our"), provides AI agents, automation, messaging and related software services to businesses.</p>
+<ul>
+<li><strong>As a controller:</strong> we decide how personal data is used for our own customers, prospects, website visitors, and people who message Quantiq AI's own accounts and AI assistants.</li>
+<li><strong>As a processor:</strong> when we build or operate AI agents for a business customer, that customer controls the personal data of its own contacts and end users, and we process it only on the customer's instructions under our <a href="#dpa">Data Processing Agreement</a>. Questions about that data should go to the business you interacted with.</li>
+</ul>
+<h2 id="privacy-collect">2. Information we collect</h2>
+<h3>2.1 Information you give us</h3>
+<ul>
+<li><strong>Account and contact data:</strong> name, email address, phone number, company, login credentials.</li>
+<li><strong>Billing data:</strong> plan and payment details. Card payments are handled by Stripe; we do not store full card numbers.</li>
+<li><strong>Forms, diagnostics and bookings:</strong> answers you submit in our forms, AI diagnostic, and appointment scheduling.</li>
+<li><strong>Communications:</strong> messages, chat transcripts, voice recordings or transcripts (where voice features are used), and support correspondence.</li>
+</ul>
+<h3 id="privacy-meta">2.2 Information we receive from Meta platforms (Facebook, Instagram, WhatsApp)</h3>
+<p>When you send a message, comment on a post, or otherwise interact with Quantiq AI's accounts (or with a business account we operate for a customer) on Facebook, Instagram or WhatsApp, Meta Platforms, Inc. shares certain information with us through its official APIs, including:</p>
+<ul>
+<li>your public name, profile picture and the platform-scoped user ID (or, on WhatsApp, your phone number and profile name);</li>
+<li>the content of messages you send and attachments you share;</li>
+<li>comments you post on our posts, and the post they relate to;</li>
+<li>basic interaction metadata such as timestamps and message status.</li>
+</ul>
+<p>We use this information only to read and respond to your messages and comments (including through an AI assistant), to follow up on the request you made, to schedule calls, and to keep a record of the conversation in our CRM. We do <strong>not</strong> sell this information, do not use it for third-party advertising, and do not use it to build profiles unrelated to your conversation. Our use of data received from Meta complies with the Meta Platform Terms and Developer Policies.</p>
+<h3>2.3 Information collected automatically</h3>
+<ul>
+<li><strong>Technical data:</strong> IP address and approximate location derived from it (city, region, country), browser type, device information, time zone.</li>
+<li><strong>Usage data:</strong> pages visited, features used, and analytics events.</li>
+<li><strong>Cookies:</strong> essential cookies needed for the service, and analytics cookies where permitted. You can control cookies through your browser settings.</li>
+</ul>
+<h3>2.4 Business contact information from public sources</h3>
+<p>For business-to-business outreach, we may collect professional contact details (such as a business name, business email address, business phone number and website) from publicly available sources, such as business directories, map listings and company websites. We use this only to contact businesses about services relevant to them. Every outreach email includes a way to opt out, and you can ask us at any time to stop contacting you and to delete these details by writing to <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>.</p>
+<h2 id="privacy-use">3. How we use information</h2>
+<ul>
+<li>To provide, operate and support our services and AI assistants.</li>
+<li>To respond to messages, comments, inquiries and diagnostic requests.</li>
+<li>To schedule calls and demos you request.</li>
+<li>To process payments and manage subscriptions.</li>
+<li>To send service, security and account notices.</li>
+<li>To send marketing communications, where you have agreed or where the law otherwise permits, always with an opt-out.</li>
+<li>To secure our services, prevent fraud and abuse, and enforce our <a href="#terms">Terms of Service</a>.</li>
+<li>To improve our services using aggregated or de-identified data.</li>
+<li>To comply with legal obligations.</li>
+</ul>
+<h3>Legal bases (EEA/UK users)</h3>
+<p>We rely on performance of a contract, our legitimate interests (operating, securing and improving our services and responding to business inquiries), your consent (for example, for marketing or non-essential cookies), and compliance with legal obligations.</p>
+<h2 id="privacy-ai">4. AI assistants and automated responses</h2>
+<p>Conversations with Quantiq AI on our website, social media and messaging channels may be handled by an artificial intelligence assistant rather than a person. AI-generated responses may occasionally be inaccurate. You can ask to speak with a human at any time and we will route your request to our team. We do not make decisions that produce legal or similarly significant effects about you based solely on automated processing.</p>
+<p>The AI model providers listed below receive conversation content only to generate responses. The primary providers we use (OpenAI, Anthropic and Google) do not use data submitted through their business/API services to train their models.</p>
+<h2 id="privacy-sms">5. SMS and WhatsApp messaging</h2>
+<p>If you opt in to receive text messages from us, message frequency varies. Message and data rates may apply. Reply <strong>STOP</strong> to opt out at any time, or <strong>HELP</strong> for help.</p>
+<p><strong>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.</strong> All the categories of sharing described in this policy exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
+<h2 id="privacy-share">6. How we share information</h2>
+<p>We do not sell personal data and do not share it for cross-context behavioral advertising. We share personal data only:</p>
+<ul>
+<li>with the service providers (sub-processors) listed below, who process it on our behalf under data protection terms;</li>
+<li>with the business customer on whose behalf we operate an AI agent, when you interact with that business;</li>
+<li>when required by law, legal process, or to protect rights, safety and security;</li>
+<li>in connection with a merger, acquisition or sale of assets, subject to this policy.</li>
+</ul>
+<h2 id="privacy-subprocessors">7. Service providers (sub-processors)</h2>
+<p>Some providers are used for every account; others only when the related feature, channel or AI model is enabled.</p>
+<table>
+<thead><tr><th>Provider</th><th>Purpose</th><th>Location</th></tr></thead>
+<tbody>
+<tr><td>PayMeGPT, Inc.</td><td>Core software platform that hosts our AI agents, CRM, flows and pages</td><td>USA</td></tr>
+<tr><td>Neon, Inc.</td><td>Managed database (accounts, contacts, conversations)</td><td>USA</td></tr>
+<tr><td>Google Cloud</td><td>File and media storage</td><td>USA</td></tr>
+<tr><td>Stripe, Inc.</td><td>Payment processing</td><td>USA</td></tr>
+<tr><td>Amazon Web Services (SES)</td><td>Transactional email delivery</td><td>USA</td></tr>
+<tr><td>Twilio Inc.</td><td>SMS, voice and telephony</td><td>USA</td></tr>
+<tr><td>ElevenLabs, Inc.</td><td>Voice generation and speech-to-text</td><td>USA</td></tr>
+<tr><td>Meta Platforms, Inc.</td><td>Facebook Messenger, Instagram and WhatsApp messaging</td><td>USA</td></tr>
+<tr><td>OpenAI</td><td>AI language, image and video processing</td><td>USA</td></tr>
+<tr><td>Anthropic</td><td>AI language processing</td><td>USA</td></tr>
+<tr><td>Google (Gemini)</td><td>AI language and video processing</td><td>USA</td></tr>
+<tr><td>xAI</td><td>AI language and voice processing (if selected)</td><td>USA</td></tr>
+<tr><td>Groq, Inc.</td><td>AI model inference (if selected)</td><td>USA</td></tr>
+<tr><td>DeepSeek</td><td>AI language processing (only if selected; never receives Google user data)</td><td>China</td></tr>
+<tr><td>Google Analytics</td><td>Website analytics</td><td>USA</td></tr>
+<tr><td>ipapi.co / ip-api.com</td><td>Approximate location from IP address</td><td>International</td></tr>
+<tr><td>Telegram, Discord, X Corp.</td><td>Messaging channels (only if connected)</td><td>International / USA</td></tr>
+<tr><td>Business outreach tools</td><td>Collection of business contact details from public sources, email address verification, and outreach email delivery</td><td>USA / International</td></tr>
+</tbody>
+</table>
+<p>We may update this list as providers change; the current version is always on this page.</p>
+<h2 id="privacy-retention">8. Data retention</h2>
+<ul>
+<li><strong>Account data:</strong> while your account is active, then deleted within 30 days of a deletion request or account closure.</li>
+<li><strong>Conversation data (including data received from Meta):</strong> up to 2 years from the last interaction, or sooner if you request deletion.</li>
+<li><strong>Business outreach contact data:</strong> until you opt out or ask us to delete it, and in any case no longer than 2 years without engagement. We keep a minimal suppression record so we do not contact you again.</li>
+<li><strong>Payment records:</strong> up to 7 years, as required for tax and accounting.</li>
+<li><strong>Analytics data:</strong> aggregated or anonymized within 26 months.</li>
+</ul>
+<h2 id="privacy-rights">9. Your rights and choices</h2>
+<p>Depending on where you live, you may have the right to access, correct, delete, or receive a copy of your personal data, to object to or restrict certain processing, to withdraw consent, and to opt out of marketing. These include rights under the EU/UK GDPR, U.S. state privacy laws, and, for individuals in Mexico, the ARCO rights (access, rectification, cancellation and opposition) under Mexican data protection law.</p>
+<p>To exercise any right, email <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>. We will respond within 30 days and may need to verify your identity. You will not be discriminated against for exercising your rights. To delete data we received through Facebook, Instagram or WhatsApp, follow our <a href="#data-deletion">Data Deletion Instructions</a>. If you are in the EEA or UK, you may also complain to your local supervisory authority.</p>
+<h2 id="privacy-transfers">10. International transfers</h2>
+<p>We are based in the United States and process data primarily in the United States. If you access our services from outside the U.S., your data will be transferred to and processed in the U.S. and, depending on the features enabled, in other countries where our providers operate. Where required, we rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses.</p>
+<h2 id="privacy-security">11. Security</h2>
+<p>We use reasonable technical and organizational measures to protect personal data, including encryption in transit (TLS) and at rest, access controls and least-privilege access, logging of administrative access, and incident-response procedures. No method of transmission or storage is completely secure. If a personal data breach affects you, we will notify you and the relevant authorities as required by law.</p>
+<h2 id="privacy-google">12. Google user data</h2>
+<p>Our use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. See our <a href="#limited-use">Google API Limited Use Disclosure</a>.</p>
+<h2 id="privacy-children">13. Children</h2>
+<p>Our services are intended for businesses and are not directed to children under 16. We do not knowingly collect personal data from children under 16. If you believe a child has provided us with personal data, contact us and we will delete it.</p>
+<h2 id="privacy-changes">14. Changes to this policy</h2>
+<p>We may update this policy from time to time. We will post the updated version on this page with a new effective date and, for material changes, notify account holders by email.</p>
+<h2 id="privacy-contact">15. Contact us</h2>
+<p>JCB Worldwide Enterprises LLC (dba Quantiq AI)<br>29717 Morwen Pl, Zephyrhills, FL 33543-6738, United States<br>Email (privacy and support): <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a></p>
+</main></div></section><section class="doc" id="terms" data-doc="terms">
+<div class="wrap"><aside class="toc" aria-label="Terms of Service contents"><p>On this page</p><a href="#terms-provider">1. Who provides the Services</a><a href="#terms-account">2. Your account</a><a href="#terms-trial">3. Free trial</a><a href="#terms-billing">4. Subscriptions, fees and billing</a><a href="#terms-cancel">5. Cancellation</a><a href="#terms-refunds">6. Refunds</a><a href="#terms-custom">7. Custom services</a><a href="#terms-aup">8. Acceptable use</a><a href="#terms-channels">9. Messaging channels and third-party platforms</a><a href="#terms-sms">10. SMS program terms</a><a href="#terms-ai">11. AI output</a><a href="#terms-content">12. Your content and data</a><a href="#terms-ip">13. Our intellectual property</a><a href="#terms-termination">14. Suspension and termination</a><a href="#terms-warranty">15. Disclaimer of warranties</a><a href="#terms-liability">16. Limitation of liability</a><a href="#terms-indemnity">17. Indemnification</a><a href="#terms-law">18. Governing law and disputes</a><a href="#terms-changes">19. Changes to these Terms</a><a href="#terms-general">20. General</a><a href="#terms-contact">21. Contact</a></aside>
+<main><h1>Terms of Service</h1><p class="meta">Effective date: October 8, 2026 &middot; Last updated: October 8, 2026</p>
+<p class="lead">These Terms of Service ("Terms") govern your access to and use of the Quantiq AI websites, software platform, AI agents and related services (the "Services"). By creating an account, starting a trial, or using the Services, you agree to these Terms.</p>
+<div class="callout"><strong>Quantiq AI</strong> is a brand of <strong>JCB Worldwide Enterprises LLC</strong>, 29717 Morwen Pl, Zephyrhills, FL 33543-6738, United States. Contact: <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>.</div>
+<h2 id="terms-provider">1. Who provides the Services</h2>
+<p>The Services are provided by JCB Worldwide Enterprises LLC, a Florida limited liability company doing business as Quantiq AI ("Quantiq AI", "we", "us"). "You" means the individual or the business entity on whose behalf you accept these Terms. You must be at least 18 years old and able to enter into a binding contract.</p>
+<h2 id="terms-account">2. Your account</h2>
+<p>You agree to provide accurate information, keep it up to date, and keep your login credentials secure. You are responsible for all activity under your account, including activity by team members you invite. Tell us promptly at <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a> if you suspect unauthorized access.</p>
+<h2 id="terms-trial">3. Free trial</h2>
+<p>We may offer new customers a free trial. The trial currently lasts 7 days, unless a different length is shown when you sign up; the length shown at sign-up applies to your trial. We may change or end trial offers for future sign-ups at any time. Unless you cancel before the trial ends, your subscription will start and your payment method will be charged the applicable fee. Trials are limited to one per customer.</p>
+<h2 id="terms-billing">4. Subscriptions, fees and billing</h2>
+<ul>
+<li>Subscriptions are billed in advance on a recurring basis (for example, monthly) and renew automatically until cancelled.</li>
+<li>Fees are as shown on our pricing page or your order at the time of purchase, excluding applicable taxes. Payments are processed by Stripe.</li>
+<li>We do not currently charge usage-based fees for message volume. If we introduce usage-based fees or change subscription prices, we will give you at least 30 days' notice by email, and the change will apply from your next billing period. If you do not agree, you may cancel before the change takes effect.</li>
+<li>Third-party costs you incur directly (for example, your own Twilio, WhatsApp conversation, or AI provider charges when you connect your own accounts or keys) are your responsibility.</li>
+</ul>
+<h2 id="terms-cancel">5. Cancellation</h2>
+<p>You may cancel at any time from your account settings or by emailing <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>. Cancellation takes effect at the end of the current billing period, and you keep access until then.</p>
+<h2 id="terms-refunds">6. Refunds</h2>
+<p>Except as stated below or required by law, fees are non-refundable and we do not provide refunds or credits for partial billing periods. We will issue a refund in these cases:</p>
+<ul>
+<li><strong>Billing errors:</strong> duplicate charges or charges in the wrong amount are refunded in full.</li>
+<li><strong>Charge after cancelling a trial:</strong> if you cancelled before your free trial ended and were still charged, we will refund that charge in full.</li>
+<li><strong>Extended outage:</strong> if the Services are unavailable for more than 72 consecutive hours due to a cause within our control, we will refund or credit the fees for the affected period, pro-rated.</li>
+<li><strong>Where required by law:</strong> any refund required under applicable consumer protection law.</li>
+</ul>
+<p>To request a refund, email <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a> within 30 days of the charge with your account email and the reason. Approved refunds are returned to the original payment method.</p>
+<h2 id="terms-custom">7. Custom services</h2>
+<p>Custom AI agent design, implementation and other professional services are governed by a separate proposal, quote or statement of work. If that document conflicts with these Terms, that document controls for those services.</p>
+<h2 id="terms-aup">8. Acceptable use</h2>
+<p>You will not use the Services to:</p>
+<ul>
+<li>break any law, or engage in fraud, phishing, or deceptive practices;</li>
+<li>send spam or unsolicited messages, or message people without the consent required by law (including the TCPA, CAN-SPAM and anti-spam laws in other countries);</li>
+<li>harass, threaten, or abuse anyone, or distribute hateful, sexually explicit, or violent content;</li>
+<li>collect or process personal data without a lawful basis, or process sensitive data (such as health or financial data) without the safeguards required by law;</li>
+<li>distribute malware, interfere with the Services, or try to access accounts or data that are not yours;</li>
+<li>infringe intellectual property or other rights;</li>
+<li>resell, sublicense or white-label the Services without our written agreement.</li>
+</ul>
+<h2 id="terms-channels">9. Messaging channels and third-party platforms</h2>
+<p>When you connect Facebook, Instagram, WhatsApp, SMS, or other channels, you must comply with the terms and policies of those platforms, including the Meta Platform Terms, WhatsApp Business Messaging Policy, and carrier and Twilio messaging rules. You are responsible for obtaining the opt-ins and consents required to message your contacts, honoring opt-out requests (such as STOP), and identifying your business in your messages.</p>
+<p>The Services depend on third-party platforms and APIs (such as Meta, Google, Twilio and AI model providers). We are not responsible for changes, outages, or restrictions imposed by those third parties, though we will make reasonable efforts to adapt.</p>
+<h2 id="terms-sms">10. SMS program terms</h2>
+<p>If you opt in to receive text messages from Quantiq AI, message frequency varies depending on your interactions. Message and data rates may apply. Reply STOP to cancel and HELP for help, or contact <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>. Carriers are not liable for delayed or undelivered messages. See our <a href="#privacy-sms">Privacy Policy</a> for how we handle mobile information.</p>
+<h2 id="terms-ai">11. AI output</h2>
+<p>The Services use artificial intelligence to generate responses and content. AI output may be inaccurate, incomplete, or inappropriate, and should be reviewed before you rely on it for important decisions. You are responsible for configuring your agents, reviewing their behavior, and the content your agents send to your contacts. You must disclose the use of AI to your contacts where the law requires it.</p>
+<h2 id="terms-content">12. Your content and data</h2>
+<p>You keep all rights to the content and data you upload or create through the Services ("Customer Content"). You grant us a limited, non-exclusive license to host, copy, process and display Customer Content only as needed to provide, secure and support the Services. We do not publish your Customer Content or use it to train AI models. When we process personal data on your behalf, our <a href="#dpa">Data Processing Agreement</a> applies and is part of these Terms; how we handle personal data is described in our <a href="#privacy">Privacy Policy</a>.</p>
+<h2 id="terms-ip">13. Our intellectual property</h2>
+<p>The Services, including software, designs, templates and branding, are owned by JCB Worldwide Enterprises LLC and its licensors. We grant you a limited, non-exclusive, non-transferable right to use the Services during your subscription in line with these Terms. Feedback you give us may be used without obligation to you.</p>
+<h2 id="terms-termination">14. Suspension and termination</h2>
+<p>We may suspend or terminate your access if you materially breach these Terms, fail to pay, or use the Services in a way that creates legal risk or harms others or the Services. Where reasonable, we will notify you first and give you a chance to fix the problem. After termination, you may request an export of your data within 30 days, after which we may delete it as described in our Privacy Policy.</p>
+<h2 id="terms-warranty">15. Disclaimer of warranties</h2>
+<p>Except as expressly stated in these Terms, the Services are provided "as is" and "as available," without warranties of any kind, express or implied, including warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not guarantee that the Services will be uninterrupted or error-free, or that they will achieve any particular business result.</p>
+<h2 id="terms-liability">16. Limitation of liability</h2>
+<p>To the maximum extent permitted by law, neither party will be liable for any indirect, incidental, special, consequential or punitive damages, or for lost profits, revenue or data. Our total liability arising out of or relating to the Services or these Terms will not exceed the amounts you paid us in the 12 months before the event giving rise to the claim. These limits do not apply where the law does not allow them.</p>
+<h2 id="terms-indemnity">17. Indemnification</h2>
+<p>You will defend and indemnify JCB Worldwide Enterprises LLC against third-party claims arising from your Customer Content, your messages to your contacts, or your violation of these Terms or applicable law.</p>
+<h2 id="terms-law">18. Governing law and disputes</h2>
+<p>These Terms are governed by the laws of the State of Florida, United States, without regard to conflict-of-law rules. We will first try to resolve any dispute informally; please contact <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>. If a dispute is not resolved within 30 days, it will be resolved by binding arbitration administered by the American Arbitration Association, seated in Pasco County, Florida, except that either party may bring an individual claim in small claims court or seek injunctive relief for misuse of intellectual property. Claims must be brought individually, not as part of a class or representative action, to the extent permitted by law.</p>
+<h2 id="terms-changes">19. Changes to these Terms</h2>
+<p>We may update these Terms. We will post the new version on this page with a new effective date and, for material changes, notify you by email at least 15 days before they take effect. Continuing to use the Services after that date means you accept the updated Terms.</p>
+<h2 id="terms-general">20. General</h2>
+<p>These Terms, together with the Privacy Policy, the Data Processing Agreement and any order or statement of work, are the entire agreement between you and us about the Services. If any provision is unenforceable, the rest remains in effect. Failure to enforce a provision is not a waiver. You may not assign these Terms without our consent; we may assign them in connection with a merger or sale of assets.</p>
+<h2 id="terms-contact">21. Contact</h2>
+<p>JCB Worldwide Enterprises LLC (dba Quantiq AI)<br>29717 Morwen Pl, Zephyrhills, FL 33543-6738, United States<br>Email: <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a></p>
+</main></div></section><section class="doc" id="dpa" data-doc="dpa">
+<div class="wrap"><aside class="toc" aria-label="Data Processing Agreement contents"><p>On this page</p><a href="#dpa-definitions">1. Definitions</a><a href="#dpa-roles">2. Roles</a><a href="#dpa-scope">3. Scope of processing</a><a href="#dpa-obligations">4. Our obligations</a><a href="#dpa-controller">5. Your obligations</a><a href="#dpa-security">6. Security</a><a href="#dpa-subprocessors">7. Sub-processors</a><a href="#dpa-transfers">8. International transfers</a><a href="#dpa-requests">9. Data subject requests</a><a href="#dpa-audits">10. Audits</a><a href="#dpa-deletion">11. Return and deletion</a><a href="#dpa-breach">12. Personal data breaches</a><a href="#dpa-liability">13. Liability</a><a href="#dpa-general">14. Term and governing law</a><a href="#dpa-contact">15. Contact</a><a href="#dpa-annex-a">Annex A. Details of processing</a><a href="#dpa-annex-b">Annex B. Technical and organizational measures</a><a href="#dpa-annex-c">Annex C. Sub-processors</a></aside>
+<main><h1>Data Processing Agreement</h1><p class="meta">Effective date: October 8, 2026 &middot; Last updated: October 8, 2026</p>
+<p class="lead">This Data Processing Agreement ("DPA") forms part of the <a href="#terms">Terms of Service</a> between JCB Worldwide Enterprises LLC, doing business as Quantiq AI ("Processor", "we"), and the business customer using the Services ("Customer", "Controller", "you"). It applies when we process personal data on your behalf, and reflects Article 28 of the EU General Data Protection Regulation (GDPR), the UK GDPR, and comparable laws.</p>
+<div class="callout"><strong>Quantiq AI</strong> is a brand of <strong>JCB Worldwide Enterprises LLC</strong>, 29717 Morwen Pl, Zephyrhills, FL 33543-6738, United States. Contact: <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>.</div>
+<h2 id="dpa-definitions">1. Definitions</h2>
+<p>"Personal data", "processing", "controller", "processor", "sub-processor", "data subject" and "personal data breach" have the meanings given in applicable data protection law. "Applicable Data Protection Law" means all laws relating to the processing of personal data that apply to a party, including the GDPR, the UK GDPR, U.S. state privacy laws (such as the CCPA/CPRA), and Mexico's Federal Law on the Protection of Personal Data Held by Private Parties.</p>
+<h2 id="dpa-roles">2. Roles</h2>
+<p>For personal data that you submit to or collect through the Services (for example, your contacts and the content of conversations your AI agents have with them), you are the Controller and we are your Processor. For data about your own account (such as billing and login details), we act as an independent controller as described in our <a href="#privacy">Privacy Policy</a>.</p>
+<h2 id="dpa-scope">3. Scope of processing</h2>
+<ul>
+<li><strong>Subject matter:</strong> providing AI agents, multi-channel messaging, automation, CRM, scheduling, payments and related services.</li>
+<li><strong>Duration:</strong> the term of the Terms of Service, plus the deletion periods in Section 11.</li>
+<li><strong>Nature and purpose:</strong> collecting, storing, transmitting, analyzing and otherwise processing personal data to operate the features you enable.</li>
+<li><strong>Data subjects and data types:</strong> as set out in Annex A.</li>
+</ul>
+<h2 id="dpa-obligations">4. Our obligations</h2>
+<p>We will:</p>
+<ul>
+<li>process personal data only on your documented instructions (including the Terms and this DPA), unless the law requires otherwise, in which case we will tell you first unless legally prohibited;</li>
+<li>ensure that people authorized to process personal data are bound by confidentiality;</li>
+<li>implement the security measures in Section 6 and Annex B;</li>
+<li>use sub-processors only as described in Section 7;</li>
+<li>help you respond to data subject requests, and with your obligations on security, breach notification and impact assessments, taking into account the nature of processing and the information available to us;</li>
+<li>delete or return personal data at the end of the Services as described in Section 11;</li>
+<li>make available information reasonably necessary to demonstrate compliance, as described in Section 10;</li>
+<li>not sell personal data or use it for our own purposes beyond providing the Services, and not use it to train AI models.</li>
+</ul>
+<h2 id="dpa-controller">5. Your obligations</h2>
+<p>You are responsible for having a lawful basis for processing, giving required notices to and obtaining required consents from your contacts (including messaging opt-ins), disclosing the use of AI where required, and ensuring your instructions comply with the law. You will not use the Services to process special categories of data or children's data except as permitted by law and with appropriate safeguards.</p>
+<h2 id="dpa-security">6. Security</h2>
+<p>We maintain appropriate technical and organizational measures to protect personal data against accidental or unlawful destruction, loss, alteration, unauthorized disclosure or access, as described in Annex B.</p>
+<h2 id="dpa-subprocessors">7. Sub-processors</h2>
+<p>You give us general authorization to engage sub-processors. Our current sub-processors, their purposes and locations are listed in Section 7 of our <a href="#privacy-subprocessors">Privacy Policy</a>, which forms Annex C. Our core platform provider is PayMeGPT, Inc. We impose data protection obligations on each sub-processor that are substantially the same as those in this DPA, and we remain responsible for their performance. We will give notice of new or replacement sub-processors by updating that list. You may object on reasonable data protection grounds by emailing <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>; if we cannot reasonably accommodate the objection, you may terminate the affected Services.</p>
+<h2 id="dpa-transfers">8. International transfers</h2>
+<p>Personal data is processed primarily in the United States, and may be processed in other countries depending on the AI models and channels you enable. Where personal data is transferred from the EEA, UK or Switzerland to a country without an adequacy decision, the transfer is subject to the European Commission's Standard Contractual Clauses, the UK International Data Transfer Addendum, or another lawful transfer mechanism.</p>
+<h2 id="dpa-requests">9. Data subject requests</h2>
+<p>If a data subject contacts us directly about data we process for you, we will forward the request to you without undue delay and will not respond directly, except to confirm the request was forwarded, unless the law requires otherwise.</p>
+<h2 id="dpa-audits">10. Audits</h2>
+<p>On reasonable prior written request, and subject to confidentiality, we will provide information reasonably necessary to demonstrate compliance with this DPA and contribute to audits by you or an independent auditor you appoint, no more than once per year (except where required by a supervisory authority or following a personal data breach).</p>
+<h2 id="dpa-deletion">11. Return and deletion</h2>
+<p>At the end of the Services, or on your written request, we will delete or return personal data processed on your behalf. Data is deleted within 30 days of termination or a deletion request, except where retention is required by law (for example, payment records kept for tax and accounting purposes for up to 7 years) or the data has been anonymized.</p>
+<h2 id="dpa-breach">12. Personal data breaches</h2>
+<p>We will notify you without undue delay, and where feasible within 72 hours, after becoming aware of a personal data breach affecting personal data we process for you. The notice will describe, to the extent known, the nature of the breach, the categories and approximate number of data subjects and records affected, the likely consequences, and the measures taken or proposed. We will cooperate with you and take reasonable steps to limit the effects of the breach.</p>
+<h2 id="dpa-liability">13. Liability</h2>
+<p>Each party's liability under this DPA is subject to the limitations in the Terms of Service, except where Applicable Data Protection Law does not permit such limitations.</p>
+<h2 id="dpa-general">14. Term and governing law</h2>
+<p>This DPA applies for as long as we process personal data on your behalf. It is governed by the law that governs the Terms of Service (the State of Florida), except where Applicable Data Protection Law requires otherwise. If this DPA conflicts with the Terms regarding data protection, this DPA prevails.</p>
+<h2 id="dpa-contact">15. Contact</h2>
+<p>For questions about this DPA, to exercise your rights as a Controller, or to request a countersigned copy: JCB Worldwide Enterprises LLC (dba Quantiq AI), 29717 Morwen Pl, Zephyrhills, FL 33543-6738, United States. Email: <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>.</p>
+<h2 id="dpa-annex-a">Annex A. Details of processing</h2>
+<h3>Categories of data subjects</h3>
+<ul>
+<li>Your customers, leads, contacts and end users who communicate with you through connected channels;</li>
+<li>recipients of your messages, campaigns and notifications;</li>
+<li>visitors to your landing pages, forms, booking pages and web chat;</li>
+<li>your team members and authorized users.</li>
+</ul>
+<h3>Types of personal data</h3>
+<ul>
+<li>Identifiers and contact details (name, email, phone number, messaging handles and platform IDs);</li>
+<li>message and conversation content across connected channels, including voice recordings or transcripts where enabled;</li>
+<li>CRM data you store about contacts (tags, pipeline stage, custom fields, notes);</li>
+<li>appointment, order and payment details;</li>
+<li>technical data such as IP address and approximate location, and usage data;</li>
+<li>any other personal data you choose to submit.</li>
+</ul>
+<h2 id="dpa-annex-b">Annex B. Technical and organizational measures</h2>
+<ul>
+<li><strong>Encryption:</strong> TLS for data in transit; encryption of data at rest; credentials and tokens encrypted.</li>
+<li><strong>Access control:</strong> role-based access, authentication, least privilege, and removal of access when roles change.</li>
+<li><strong>Auditability:</strong> logging of privileged and support access to customer accounts, available on request.</li>
+<li><strong>Resilience:</strong> managed, backed-up database infrastructure and monitoring.</li>
+<li><strong>Segregation:</strong> logical separation of customer data; technical controls preventing data read from Google APIs from being sent to AI providers whose terms permit training on submitted content.</li>
+<li><strong>Organizational:</strong> confidentiality obligations, data protection awareness, and documented incident-response procedures.</li>
+</ul>
+<h2 id="dpa-annex-c">Annex C. Sub-processors</h2>
+<p>See Section 7 of our <a href="#privacy-subprocessors">Privacy Policy</a>.</p>
+</main></div></section><section class="doc" id="data-deletion" data-doc="data-deletion">
+<div class="wrap"><aside class="toc" aria-label="Data Deletion Instructions contents"><p>On this page</p><a href="#data-deletion-how">How to request deletion</a><a href="#data-deletion-what">What we delete</a><a href="#data-deletion-when">When it happens</a><a href="#data-deletion-exceptions">What we may keep</a><a href="#data-deletion-business">If you interacted with another business</a></aside>
+<main><h1>Data Deletion Instructions</h1><p class="meta">Effective date: October 8, 2026 &middot; Last updated: October 8, 2026</p>
+<p class="lead">You can ask Quantiq AI to delete the personal data we hold about you at any time, including data we received when you messaged or commented on our accounts on Facebook, Instagram or WhatsApp.</p>
+<div class="callout"><strong>Quantiq AI</strong> is a brand of <strong>JCB Worldwide Enterprises LLC</strong>, 29717 Morwen Pl, Zephyrhills, FL 33543-6738, United States. Contact: <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>.</div>
+<h2 id="data-deletion-how">How to request deletion</h2>
+<p>Use any of these options:</p>
+<ol>
+<li><strong>Email us</strong> at <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a> with the subject <em>"Data Deletion Request"</em>. Include your name and the account you used to contact us (for example, your Instagram username, Facebook name, or WhatsApp phone number) so we can find your data.</li>
+<li><strong>Message us</strong> on the same channel you used (Instagram, Facebook Messenger or WhatsApp) with the words <em>"Delete my data"</em>. Our team will process the request and confirm.</li>
+<li><strong>If you logged in with Facebook</strong> to connect an account to Quantiq AI: go to your Facebook <em>Settings &amp; privacy &gt; Settings &gt; Apps and websites</em>, select Quantiq AI, and click <em>Remove</em>. This stops further data sharing. Then email us as in option 1 so we delete the data we already have.</li>
+</ol>
+<h2 id="data-deletion-what">What we delete</h2>
+<ul>
+<li>Your contact record (name, profile picture, platform IDs, phone number, email);</li>
+<li>conversation history, messages, comments and attachments;</li>
+<li>tags, notes and other CRM data associated with you;</li>
+<li>any access tokens for accounts you connected.</li>
+</ul>
+<h2 id="data-deletion-when">When it happens</h2>
+<p>We will confirm receipt of your request within 5 business days and complete the deletion within 30 days. We may ask you to verify that the request comes from you.</p>
+<h2 id="data-deletion-exceptions">What we may keep</h2>
+<ul>
+<li>Payment and invoice records we must keep for tax and accounting purposes (up to 7 years);</li>
+<li>information we must keep to comply with the law or resolve disputes;</li>
+<li>a minimal suppression record (such as a hashed email or phone number) so that we do not contact you again;</li>
+<li>anonymized data that can no longer identify you.</li>
+</ul>
+<h2 id="data-deletion-business">If you interacted with another business</h2>
+<p>If you messaged a business that uses Quantiq AI to run its AI assistant, that business controls your data. Please contact that business first. If you contact us, we will forward your request to them and help them complete it.</p>
+<p>For more information, see our <a href="#privacy">Privacy Policy</a>.</p>
+</main></div></section><section class="doc" id="limited-use" data-doc="limited-use">
+<div class="wrap"><aside class="toc" aria-label="Google API Limited Use Disclosure contents"><p>On this page</p><a href="#limited-use-how">How we use Google user data</a><a href="#limited-use-not">What we do not do</a><a href="#limited-use-ai">AI provider safeguards</a><a href="#limited-use-scopes">Permissions we request</a><a href="#limited-use-revoke">Retention and revoking access</a><a href="#limited-use-contact">Contact</a></aside>
+<main><h1>Google API Limited Use Disclosure</h1><p class="meta">Effective date: October 8, 2026 &middot; Last updated: October 8, 2026</p>
+<p class="lead">Quantiq AI's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<div class="callout"><strong>Quantiq AI</strong> is a brand of <strong>JCB Worldwide Enterprises LLC</strong>, 29717 Morwen Pl, Zephyrhills, FL 33543-6738, United States. Contact: <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>.</div>
+<h2 id="limited-use-how">How we use Google user data</h2>
+<p>When you connect a Google account (Google Calendar, Sheets, Docs, Drive or Gmail), we use the data we read from Google APIs only to provide the feature you turned on. Examples include showing your calendar availability to someone booking a meeting, reading a product catalog from a spreadsheet you linked, or using a Google Doc you selected as instructions for your AI agent.</p>
+<h2 id="limited-use-not">What we do not do</h2>
+<ul>
+<li>We do not use Google user data to train, fine-tune or evaluate generalized AI or machine learning models.</li>
+<li>We do not sell Google user data.</li>
+<li>We do not transfer Google user data to third parties for advertising or unrelated purposes.</li>
+<li>We do not allow people to read Google user data, except with your explicit consent for specific items, when needed for security or to comply with the law, or when the data has been aggregated and anonymized for internal operations.</li>
+</ul>
+<h2 id="limited-use-ai">AI provider safeguards</h2>
+<p>Our platform supports several AI providers. Data read from Google APIs is technically blocked from being sent to any provider whose terms allow training on submitted content (currently DeepSeek). AI agents that read Google data must run on OpenAI, Anthropic or Google Gemini, whose business terms do not allow training on API-submitted content.</p>
+<h2 id="limited-use-scopes">Permissions we request</h2>
+<table>
+<thead><tr><th>Scope</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td><code>calendar</code></td><td>List calendars, check availability, and create booking events.</td></tr>
+<tr><td><code>calendar.events</code></td><td>Read and write events for bookings you create.</td></tr>
+<tr><td><code>spreadsheets</code></td><td>Read catalogs and data sources; write conversation and contact data to sheets you choose.</td></tr>
+<tr><td><code>drive.file</code></td><td>Access only the specific files you pick with the Google Picker.</td></tr>
+<tr><td><code>userinfo.email</code>, <code>userinfo.profile</code></td><td>Show which Google account is connected.</td></tr>
+</tbody>
+</table>
+<h2 id="limited-use-revoke">Retention and revoking access</h2>
+<p>OAuth tokens are encrypted at rest. You can revoke access at any time from your account settings or from your <a href="https://myaccount.google.com/permissions" rel="noopener">Google Account permissions page</a>. Revoking access invalidates our tokens immediately, and temporary caches of Google data are cleared within 10 minutes.</p>
+<h2 id="limited-use-contact">Contact</h2>
+<p>Questions about Google user data: <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>. See also our <a href="#privacy">Privacy Policy</a> and <a href="#terms">Terms of Service</a>.</p>
+</main></div></section>
+<footer><div class="bar">
+<span>&copy; 2026 JCB Worldwide Enterprises LLC. Quantiq AI is a brand of JCB Worldwide Enterprises LLC.</span>
+<nav class="legal" aria-label="Legal documents footer"><a href="#privacy" data-foot="privacy">Privacy Policy</a><a href="#terms" data-foot="terms">Terms of Service</a><a href="#dpa" data-foot="dpa">DPA</a><a href="#data-deletion" data-foot="data-deletion">Data Deletion</a><a href="#limited-use" data-foot="limited-use">Google Limited Use</a></nav>
+</div></footer>
+<script>
+(function(){
+document.documentElement.classList.add('js');
+var docs=['privacy','terms','dpa','data-deletion','limited-use'];
+function show(){
+  var h=decodeURIComponent(location.hash.slice(1));
+  var d=docs.filter(function(s){return h===s||h.indexOf(s+'-')===0;})[0]||'privacy';
+  docs.forEach(function(s){
+    document.getElementById(s).classList.toggle('shown',s===d);
+    document.querySelectorAll('[data-tab="'+s+'"]').forEach(function(a){
+      a.classList.toggle('active',s===d); if(s===d)a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');});
+  });
+  var t=h&&h!==d?document.getElementById(h):null;
+  setTimeout(function(){if(t){t.scrollIntoView({behavior:'instant'});}else{window.scrollTo({top:0,behavior:'instant'});}},30);
+}
+window.addEventListener('hashchange',show);
+if(document.readyState!=='loading')show();else document.addEventListener('DOMContentLoaded',show);
+})();
+</script>
+</body>
+</html>
