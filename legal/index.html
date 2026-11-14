@@ -223,7 +223,7 @@
       overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
       function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
       var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
-      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
       document.body.appendChild(overlay);
       var pBtn=document.getElementById('lp-pay-success-btn');
       if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
@@ -300,7 +300,7 @@
       overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
       function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
       var subTxt=successSubtext||'Thank you for your order.';
-      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
       document.body.appendChild(overlay);
       var cBtn=document.getElementById('lp-cart-success-btn');
       if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
@@ -317,9 +317,10 @@
 </div></header>
 <section class="doc" id="privacy" data-doc="privacy">
 <div class="wrap"><aside class="toc" aria-label="Privacy Policy contents"><p>On this page</p><a href="#privacy-who">1. Who we are and our role</a><a href="#privacy-collect">2. Information we collect</a><a href="#privacy-use">3. How we use information</a><a href="#privacy-ai">4. AI assistants and automated responses</a><a href="#privacy-sms">5. SMS and WhatsApp messaging</a><a href="#privacy-share">6. How we share information</a><a href="#privacy-subprocessors">7. Service providers (sub-processors)</a><a href="#privacy-retention">8. Data retention</a><a href="#privacy-rights">9. Your rights and choices</a><a href="#privacy-transfers">10. International transfers</a><a href="#privacy-security">11. Security</a><a href="#privacy-google">12. Google user data</a><a href="#privacy-children">13. Children</a><a href="#privacy-changes">14. Changes to this policy</a><a href="#privacy-contact">15. Contact us</a></aside>
-<main><h1>Privacy Policy</h1><p class="meta">Effective date: October 8, 2026 &middot; Last updated: October 8, 2026</p>
+<main><h1>Privacy Policy</h1><p class="meta">Effective date: October 8, 2026 &middot; Last updated: November 13, 2026</p>
 <p class="lead">This Privacy Policy explains how Quantiq AI collects, uses, shares and protects personal data when you visit our websites, use our platform, or communicate with our AI assistants on Instagram, Facebook Messenger, WhatsApp, SMS, web chat and other channels.</p>
-<div class="callout"><strong>Quantiq AI</strong> is a brand of <strong>JCB Worldwide Enterprises LLC</strong>, 29717 Morwen Pl, Zephyrhills, FL 33543-6738, United States. Contact: <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>.</div>
+<p><strong>Scope.</strong> This policy applies to quantiqai.io, app.quantiqai.io and their subdomains (including booking and landing pages hosted there), and to the Quantiq AI platform and AI assistants on the channels described below.</p>
+<div class="callout"><strong>Quantiq AI</strong> is a brand of <strong>JCB Worldwide Enterprises LLC</strong>, 29717 Morwen Pl, Zephyrhills, FL 33543-6738, United States. Contact: <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>. ¿Necesita ayuda en español? Escríbanos a <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>. If there is any discrepancy, the English version prevails.</div>
 <h2 id="privacy-who">1. Who we are and our role</h2>
 <p>JCB Worldwide Enterprises LLC, doing business as Quantiq AI ("Quantiq AI", "we", "us", "our"), provides AI agents, automation, messaging and related software services to businesses.</p>
 <ul>
@@ -333,6 +334,7 @@
 <li><strong>Billing data:</strong> plan and payment details. Card payments are handled by Stripe; we do not store full card numbers.</li>
 <li><strong>Forms, diagnostics and bookings:</strong> answers you submit in our forms, AI diagnostic, and appointment scheduling.</li>
 <li><strong>Communications:</strong> messages, chat transcripts, voice recordings or transcripts (where voice features are used), and support correspondence.</li>
+<li><strong>Loyalty and wallet pass data:</strong> if you join a loyalty program or add a pass to Apple Wallet or Google Wallet, we process your name, contact details, points balance, tier, visit/purchase activity and the device push identifiers needed to update your pass.</li>
 </ul>
 <h3 id="privacy-meta">2.2 Information we receive from Meta platforms (Facebook, Instagram, WhatsApp)</h3>
 <p>When you send a message, comment on a post, or otherwise interact with Quantiq AI's accounts (or with a business account we operate for a customer) on Facebook, Instagram or WhatsApp, Meta Platforms, Inc. shares certain information with us through its official APIs, including:</p>
@@ -347,7 +349,7 @@
 <ul>
 <li><strong>Technical data:</strong> IP address and approximate location derived from it (city, region, country), browser type, device information, time zone.</li>
 <li><strong>Usage data:</strong> pages visited, features used, and analytics events.</li>
-<li><strong>Cookies:</strong> essential cookies needed for the service, and analytics cookies where permitted. You can control cookies through your browser settings.</li>
+<li><strong>Cookies:</strong> essential cookies needed for the service, and analytics cookies (such as Google Analytics). Where the law requires it (for example, in the EEA and UK), we set non-essential cookies only with your consent, and you can withdraw it at any time. You can also control cookies through your browser settings.</li>
 </ul>
 <h3>2.4 Business contact information from public sources</h3>
 <p>For business-to-business outreach, we may collect professional contact details (such as a business name, business email address, business phone number and website) from publicly available sources, such as business directories, map listings and company websites. We use this only to contact businesses about services relevant to them. Every outreach email includes a way to opt out, and you can ask us at any time to stop contacting you and to delete these details by writing to <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>.</p>
@@ -392,6 +394,7 @@
 <tr><td>Twilio Inc.</td><td>SMS, voice and telephony</td><td>USA</td></tr>
 <tr><td>ElevenLabs, Inc.</td><td>Voice generation and speech-to-text</td><td>USA</td></tr>
 <tr><td>Meta Platforms, Inc.</td><td>Facebook Messenger, Instagram and WhatsApp messaging</td><td>USA</td></tr>
+<tr><td>Apple Inc. / Google LLC (Wallet)</td><td>Apple Wallet and Google Wallet pass issuing and updates (only if loyalty or wallet pass features are enabled)</td><td>USA</td></tr>
 <tr><td>OpenAI</td><td>AI language, image and video processing</td><td>USA</td></tr>
 <tr><td>Anthropic</td><td>AI language processing</td><td>USA</td></tr>
 <tr><td>Google (Gemini)</td><td>AI language and video processing</td><td>USA</td></tr>
@@ -430,8 +433,9 @@
 <p>JCB Worldwide Enterprises LLC (dba Quantiq AI)<br>29717 Morwen Pl, Zephyrhills, FL 33543-6738, United States<br>Email (privacy and support): <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a></p>
 </main></div></section><section class="doc" id="terms" data-doc="terms">
 <div class="wrap"><aside class="toc" aria-label="Terms of Service contents"><p>On this page</p><a href="#terms-provider">1. Who provides the Services</a><a href="#terms-account">2. Your account</a><a href="#terms-trial">3. Free trial</a><a href="#terms-billing">4. Subscriptions, fees and billing</a><a href="#terms-cancel">5. Cancellation</a><a href="#terms-refunds">6. Refunds</a><a href="#terms-custom">7. Custom services</a><a href="#terms-aup">8. Acceptable use</a><a href="#terms-channels">9. Messaging channels and third-party platforms</a><a href="#terms-sms">10. SMS program terms</a><a href="#terms-ai">11. AI output</a><a href="#terms-content">12. Your content and data</a><a href="#terms-ip">13. Our intellectual property</a><a href="#terms-termination">14. Suspension and termination</a><a href="#terms-warranty">15. Disclaimer of warranties</a><a href="#terms-liability">16. Limitation of liability</a><a href="#terms-indemnity">17. Indemnification</a><a href="#terms-law">18. Governing law and disputes</a><a href="#terms-changes">19. Changes to these Terms</a><a href="#terms-general">20. General</a><a href="#terms-contact">21. Contact</a></aside>
-<main><h1>Terms of Service</h1><p class="meta">Effective date: October 8, 2026 &middot; Last updated: October 8, 2026</p>
+<main><h1>Terms of Service</h1><p class="meta">Effective date: October 8, 2026 &middot; Last updated: November 13, 2026</p>
 <p class="lead">These Terms of Service ("Terms") govern your access to and use of the Quantiq AI websites, software platform, AI agents and related services (the "Services"). By creating an account, starting a trial, or using the Services, you agree to these Terms.</p>
+<p><strong>Scope.</strong> These Terms apply to quantiqai.io, app.quantiqai.io and their subdomains, and to all Services provided by Quantiq AI.</p>
 <div class="callout"><strong>Quantiq AI</strong> is a brand of <strong>JCB Worldwide Enterprises LLC</strong>, 29717 Morwen Pl, Zephyrhills, FL 33543-6738, United States. Contact: <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>.</div>
 <h2 id="terms-provider">1. Who provides the Services</h2>
 <p>The Services are provided by JCB Worldwide Enterprises LLC, a Florida limited liability company doing business as Quantiq AI ("Quantiq AI", "we", "us"). "You" means the individual or the business entity on whose behalf you accept these Terms. You must be at least 18 years old and able to enter into a binding contract.</p>
@@ -499,7 +503,7 @@
 <p>JCB Worldwide Enterprises LLC (dba Quantiq AI)<br>29717 Morwen Pl, Zephyrhills, FL 33543-6738, United States<br>Email: <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a></p>
 </main></div></section><section class="doc" id="dpa" data-doc="dpa">
 <div class="wrap"><aside class="toc" aria-label="Data Processing Agreement contents"><p>On this page</p><a href="#dpa-definitions">1. Definitions</a><a href="#dpa-roles">2. Roles</a><a href="#dpa-scope">3. Scope of processing</a><a href="#dpa-obligations">4. Our obligations</a><a href="#dpa-controller">5. Your obligations</a><a href="#dpa-security">6. Security</a><a href="#dpa-subprocessors">7. Sub-processors</a><a href="#dpa-transfers">8. International transfers</a><a href="#dpa-requests">9. Data subject requests</a><a href="#dpa-audits">10. Audits</a><a href="#dpa-deletion">11. Return and deletion</a><a href="#dpa-breach">12. Personal data breaches</a><a href="#dpa-liability">13. Liability</a><a href="#dpa-general">14. Term and governing law</a><a href="#dpa-contact">15. Contact</a><a href="#dpa-annex-a">Annex A. Details of processing</a><a href="#dpa-annex-b">Annex B. Technical and organizational measures</a><a href="#dpa-annex-c">Annex C. Sub-processors</a></aside>
-<main><h1>Data Processing Agreement</h1><p class="meta">Effective date: October 8, 2026 &middot; Last updated: October 8, 2026</p>
+<main><h1>Data Processing Agreement</h1><p class="meta">Effective date: October 8, 2026 &middot; Last updated: November 13, 2026</p>
 <p class="lead">This Data Processing Agreement ("DPA") forms part of the <a href="#terms">Terms of Service</a> between JCB Worldwide Enterprises LLC, doing business as Quantiq AI ("Processor", "we"), and the business customer using the Services ("Customer", "Controller", "you"). It applies when we process personal data on your behalf, and reflects Article 28 of the EU General Data Protection Regulation (GDPR), the UK GDPR, and comparable laws.</p>
 <div class="callout"><strong>Quantiq AI</strong> is a brand of <strong>JCB Worldwide Enterprises LLC</strong>, 29717 Morwen Pl, Zephyrhills, FL 33543-6738, United States. Contact: <a href="mailto:contact@quantiqai.io">contact@quantiqai.io</a>.</div>
 <h2 id="dpa-definitions">1. Definitions</h2>
@@ -512,6 +516,7 @@
 <li><strong>Duration:</strong> the term of the Terms of Service, plus the deletion periods in Section 11.</li>
 <li><strong>Nature and purpose:</strong> collecting, storing, transmitting, analyzing and otherwise processing personal data to operate the features you enable.</li>
 <li><strong>Data subjects and data types:</strong> as set out in Annex A.</li>
+<li><strong>Applicable sites and services:</strong> the Quantiq AI platform at app.quantiqai.io and related subdomains.</li>
 </ul>
 <h2 id="dpa-obligations">4. Our obligations</h2>
 <p>We will:</p>
@@ -560,6 +565,7 @@
 <li>Identifiers and contact details (name, email, phone number, messaging handles and platform IDs);</li>
 <li>message and conversation content across connected channels, including voice recordings or transcripts where enabled;</li>
 <li>CRM data you store about contacts (tags, pipeline stage, custom fields, notes);</li>
+<li>loyalty program and wallet pass data (points, tiers, pass identifiers and device push tokens) where those features are enabled;</li>
 <li>appointment, order and payment details;</li>
 <li>technical data such as IP address and approximate location, and usage data;</li>
 <li>any other personal data you choose to submit.</li>
