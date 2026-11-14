@@ -550,6 +550,7 @@
   footer { padding: 46px 0 42px; text-align: center; border-top: 1px solid var(--line); }
   .footer-logo { font-family: var(--display); font-weight: 700; font-size: 19px; margin-bottom: 14px; }
   .footer-copy { color: var(--muted); font-size: 13.5px; }
+  .footer-links{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px;font-size:13.5px;color:var(--muted)} .footer-links a{color:var(--muted);text-decoration:none} .footer-links a:hover{color:var(--text,#fff);text-decoration:underline}
 
   /* ── RESPONSIVE ──────────────────── */
   @media (max-width: 960px) {
